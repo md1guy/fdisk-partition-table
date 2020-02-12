@@ -7,7 +7,7 @@
 # the fdisk default.
 # Run directly from github: 
 # wget -O - https://raw.githubusercontent.com/md1guy/fdisk-partition-table/master/fdisk-partition-table.sh | bash
-sed -e 's/\s*\([\+0-9a-zA-Z]*\).*/\1/' << EOF | fdisk dev/sda
+sed -e 's/\s*\([\+0-9a-zA-Z]*\).*/\1/' << EOF | fdisk /dev/sda
   o # clear the in memory partition table
   n # new partition
   p # primary partition
